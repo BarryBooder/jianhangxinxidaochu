@@ -1,16 +1,16 @@
 import xlsxwriter
 
-workbook = xlsxwriter.Workbook('jhkdx.xlsx')  # 建立文件
+workbook = xlsxwriter.Workbook('jhkdx.xlsx')  
 
-worksheet = workbook.add_worksheet()  # 建立sheet， 可以work.add_worksheet('employee')来指定sheet名，但中文名会报UnicodeDecodeErro的错误
+worksheet = workbook.add_worksheet()  
 
-worksheet.write('A1', '序号')  # 向A1写入
-worksheet.write('B1', '卡尾号')  # 向A1写入
-worksheet.write('C1', '日期和时间')  # 向A1写入
-worksheet.write('D1', '金额')  # 向A1写入
-worksheet.write('E1', '卡内余额')  # 向A1写入
-worksheet.write('F1', '收支状态')  # 向A1写入
-worksheet.write('G1', '谁')  # 向A1写入
+worksheet.write('A1', '序号')  
+worksheet.write('B1', '卡尾号')  
+worksheet.write('C1', '日期和时间')  
+worksheet.write('D1', '金额')  
+worksheet.write('E1', '卡内余额') 
+worksheet.write('F1', '收支状态')  
+worksheet.write('G1', '谁')  
 
 KaHao = ""
 RiQi = ""
